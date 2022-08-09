@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
         <head>
             <title>Larasati Sodjati's Profile</title>
+            <meta charset="utf-8">
             <meta name="author" content="Larasati Sodjati">
             <meta name="viewport" content="width=device-width", initial-scale="1.0">
+            <link rel="stylesheet" href="css/index.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Outfit&family=Poppins&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
         </head>
 <body>
         <header>
@@ -11,13 +16,13 @@
         <p>A simple blog about me.</p>
 
         <nav>
-            <a href="#about">About</a>|
-            <a href="#experience">Experience</a>|
+            <a href="#about">About</a> |
+            <a href="#experience">Experience</a> |
             <a href="#connect">Connect</a> 
         </nav>
         </header>
 
-    <section>
+    <section id="about">
         <h1><a id ="about"></a>About</h1>
         <figure>
         <img src="../intro-to-programming-bestla/img/Bali.jpeg" alt="Bali's temple picture in the middle of the lake during sunset">  
@@ -34,7 +39,7 @@
         and cherish these opportunities as some of the best experiences that I’ve ever had in my life.</p>
     </section>
 
-    <section>
+    <section id ="experience-section">
         <h2><a id="experience"></a>Experience</h2>
         <ul>
         <li>Research Assistant I 01/2022 - Present CSU Fullerton Auxiliary Services Corporation (ASC), CA</li> 
@@ -46,39 +51,39 @@
     
     <section id = "skills">
         <h2>Skills</h2>
-        <ul>
+        <ul class="skills-list">
 
         </ul>
 
     </section>
     
-    <section>
+    <section id="connect-section">
         <h2><a id="connect"></a>Connect</h2>
         <ul>
-        <p><strong>Email:</strong><a href="mailto: larasatisodjati@gmail.com">this email</a></p> 
-        <p><strong>Github:</strong><a href="https://github.com/larasodjati">click here</a></p> 
-        <p><strong>LinkedIn:</strong><a href="https://www.linkedin.com/in/larasati-sodjati-a5b394218">click here</a></p>
+        <p><strong>Email: </strong><a href="mailto: larasatisodjati@gmail.com">this email</a></p> 
+        <p><strong>Github: </strong><a href="https://github.com/larasodjati">click here</a></p> 
+        <p><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/larasati-sodjati-a5b394218">click here</a></p>
         </ul>
     </section>
     
     <section>
         <h2>Leave Message</h2>
         <form name="leave_message">
-            <label form="name">Name</label><br>
-            <input type ="text" name ="name" required ="true"><br>
+            <label form="name" class="form-section">Name</label><br>
+            <input type ="text" name ="name" required ="true" class="input-area"><br>
 
-            <label form="email">Email</label><br>
-            <input type="email" name="email" required="true"><br>
+            <label form="email" class="form-section">Email</label><br>
+            <input type="email" name="email" required="true" class="input-area"><br>
             
-            <label form="message">Message</label><br>
-            <textarea name="message" required="true"></textarea><br>
-            <button type="submit">Submit</button>
+            <label form="message" class="form-section">Message</label><br>
+            <textarea name="message" required="true" class="input-area"></textarea><br>
+            <button type="submit" class="submit-button">Submit</button>
         </form>
     </section>
 
     <section id = "messages">
         <h2>Messages</h2>
-        <ul>
+        <ul class="visitor-message">
         
         
         </ul>

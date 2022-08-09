@@ -27,6 +27,8 @@ for(let i = 0; i < skills.length; i++){
 
 //handle message form submit
 let messageForm = document.getElementsByName("leave_message")[0];
+let messageSection = document.getElementById("messages");
+messageSection.hidden = true;
 messageForm.addEventListener("submit", submitForm);
 
 function submitForm(event){
@@ -41,7 +43,7 @@ function submitForm(event){
     console.log(message);
     
     //display messages in list
-    let messageSection = document.getElementById("messages");
+    
     let messageList = messageSection.querySelector("ul")
     let newMessage = document.createElement("li");
 
@@ -58,11 +60,16 @@ function submitForm(event){
         entry.remove();    
     }
     
-    
-    newMessage.appendChild(removeButton);
     messageList.appendChild(newMessage);
-        
+    newMessage.appendChild(removeButton);
+    messageSection.hidden = false;    
     event.target.reset();
+
+    //hide message list
+    if(messageList== 0) {
+        document.getElementById("messages").style.display = "none";
+    }
+   
 }
 
 
