@@ -4,22 +4,21 @@ header{
     text-align: center;
     background-color:#F0A160;
     font-weight: bold;
+    margin: -30px -10px 20px;
 }
 #about{
     text-align: center;
     font-weight:500;
     margin: 0px 10px 50px;
-    padding: 0px;
 }
 /*change font type, size, and color of body*/
 body{
     background-color: #F6F0E7;
     color : #050c12;
-    font-family: "Poppins", "PT Sans", Calibri, Tahoma, sans-serif;
-    background-image: url(); 
+    font-family: "Poppins", "PT Sans", Calibri, Tahoma, sans-serif;  
 }
 img{
-    display:block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,32 +26,24 @@ img{
 section{
     margin: 0px 10px 20px;
     padding: 0px;
+   
 }
 /*style all headings*/
-h1{
-    font-size: 2em;
-    font-weight:bold;
-    color:black;
-}
-h2{
+h1, h2{
     font-size: 2em;
     font-weight:bold;
     color:black;
 }
 /*styled blocks experience section*/
-#experience-section{
+#experience-section, #skills{
     border: 3px dotted #F0C9B3;
     font-size: 1.1rem; 
     margin: 0px 10px 50px;
     padding: 5px;
 }
-
 /*styled blocks skills section*/
 #skills{
-    font-size: 1.1rem;
-    background: #F7E7CE;
-    margin: 0px 10px 50px;
-    padding: 5px;  
+    background: #F7E7CE; 
 }
 .skills-list{
     font-weight: bold;
@@ -74,14 +65,13 @@ a:link{
   a:hover{
     text-decoration: underline;
 }
-
 /*style the form elements*/
 .form-section{
     color: #BA8D80;
     font-weight:800;
 }
 .input-area{
-    font-family: "Poppins", "PT Sans", Calibri, Arial, sans-serif;
+    font-family: "Poppins", "PT Sans", Calibri, Tahoma, sans-serif;  
     font-size: medium;
     font-weight:600;
     width: 17%;
@@ -92,7 +82,7 @@ a:link{
     border-radius: 4px;
     box-sizing: border-box;
 }
-.submit-button{
+.submit-button, button{
     font-weight: bold;
     font-size: 14px;
     background-color: #e7805d;
@@ -101,30 +91,22 @@ a:link{
     cursor: pointer;
 }
 /*styled blocks message list*/
-#messages{
+#messages, .visitor-message{
     font-weight: bold; 
 }
 .visitor-message{
-    font-weight: bold;
     font-size: 1em;
     background-color: #f9dab0;
     padding:0px;
     margin:5px;  
-}
-button{
-    font-weight:bold;
-    border: 2.5px outset #FFF3D9;
-    border-radius: 12px;
-    text-decoration: underline;
-    background-color: #e7805d;
-    cursor: pointer;     
 }
 /*styled footer*/
 footer{
     background-color:#e4dfdb;
     color:#132df5;
     font-style:oblique;
-    margin-top: 100px;  
+    margin:100px -10px -50px; 
+    text-indent: 0.2cm; 
 }
 /* On screens that are 992px wide or less, the background color is blue */
 @media screen and (max-width: 992px) {
