@@ -6,79 +6,98 @@
             <meta name="author" content="Larasati Sodjati">
             <meta name="viewport" content="width=device-width", initial-scale="1.0">
             <link rel="stylesheet" href="css/index.css">
+            <link rel="stylesheet" href="css/flexbox-index.css">
+            <script src="https://kit.fontawesome.com/972e39eda4.js" crossorigin="anonymous"></script>
             <link rel="preconnect" href="https://fonts.googleapis.com">
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
             <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Outfit&family=Poppins&family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
         </head>
 <body>
-        <header>
-        <h1>Larasati Sodjati</h1>
-        <p>A simple blog about me.</p>
-
-        <nav>
-            <a href="#about">About</a> |
-            <a href="#experience">Experience</a> |
-            <a href="#connect">Connect</a> 
-        </nav>
+        <header class="main-header">
+            <h1 class="name">Larasati Sodjati</h1>
+            <ul class="main-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#connect">Connect</a></li>
+                <li><a href="#message">Message</a></li>
+            </ul>
         </header>
-
+    
+    
     <section id="about">
         <h1><a id ="about"></a>About</h1>
         <figure>
-        <img src="../intro-to-programming-bestla/img/Bali.jpeg" alt="Bali's temple picture in the middle of the lake during sunset" style="width:50%">  
+        <img src="../intro-to-programming-bestla/img/Bali.jpeg" alt="Bali's temple picture in the middle of the lake during sunset" style="width:80%">  
         <figcaption><em>(Image credit: Huffingtonpost Italy)</em></figcaption>
         </figure>
         <p>I grew up in Jakarta, Indonesia, and thought I would spend my whole life there and retire in Bali.
-        Seasons in my life have since then changed, and fate brought me here to start my new journey in the USA.
-        I'm currently a Research Assistant at Cal State University Auxiliary Service Corporation, Fullerton. 
-        I manage data entry and connect with new people every day. In my daily life other than working as a research assistant
-        I am also learning how to code by joining Code The Dream. My dream is to be a software engineer that can build useful programs for society.
-        I have experience in administration, business development, and working with people from different backgrounds and nationalities in my 6+ year career. 
+        I am currently a student at Code The Dream. My dream is to be a software engineer that can build useful programs for society.
+        I have experience in administration, business development, and working with people from different backgrounds and nationalities in my 6+ year career.
         I love traveling and learning new languages. I speak beginner-level Korean and had the opportunity to practice my language skills during my internship in Korea in 2015. 
         I've also had the opportunity to travel to Thailand and China for job training and learn more about the culture as well. I truly enjoy immersive cultural and language learning,
         and cherish these opportunities as some of the best experiences that I’ve ever had in my life.</p>
     </section>
-
+    
+   
     <section id ="experience-section">
         <h2><a id="experience"></a>Experience</h2>
-        <ul>
-        <li>Research Assistant I 01/2022 - Present CSU Fullerton Auxiliary Services Corporation (ASC), CA</li> 
-        <li>Service Account Representative 06/2018 - 05/2021 Tetra Pak Indonesia, Jakarta, Indonesia</li>
-        <li>Sales Assistant Manager 10/2016 - 06/2018 Chori Indonesia, Jakarta, Indonesia</li>
-        <li>Management Trainee - Business Development 07/2015 - 10/2016 LF Beauty Manufacturing Indonesia, Jakarta, Indonesia</li>
+        <ul class="exp-section">
+        <li class="item-exp">Research Assistant 01/2022 - Present, CSU Fullerton Auxiliary Services Corporation (ASC), CA</li> 
+        <li class="item-exp">Service Account Representative 06/2018 - 05/2021, Tetra Pak Indonesia, Indonesia</li>
+        <li class="item-exp">Sales Assistant Manager 10/2016 - 06/2018, Chori Indonesia, Indonesia</li>
+        <li class="item-exp">Management Trainee - Business Development 07/2015 - 10/2016, LF Beauty Manufacturing Indonesia, Indonesia</li>
         </ul>
+        </div>
     </section>
     
     <section id = "skills">
-        <h2>Skills</h2>
+        <h2><a id="skills"></a>Skills</h2>
         <ul class="skills-list">
 
         </ul>
-
+        </div>
     </section>
+    </div>
     
-    <section id="connect-section">
-        <h2><a id="connect"></a>Connect</h2>
-        <ul>
-        <p><strong>Email: </strong><a href="mailto: larasatisodjati@gmail.com">this email</a></p> 
-        <p><strong>Github: </strong><a href="https://github.com/larasodjati">click here</a></p> 
-        <p><strong>LinkedIn: </strong><a href="https://www.linkedin.com/in/larasati-sodjati-a5b394218">click here</a></p>
-        </ul>
-    </section>
+
+    
+   
     
     <section>
-        <h2>Leave Message</h2>
-        <form name="leave_message">
-            <label form="name" class="form-section">Name</label><br>
-            <input type ="text" name ="name" required ="true" class="input-area"><br>
-
-            <label form="email" class="form-section">Email</label><br>
-            <input type="email" name="email" required="true" class="input-area"><br>
-            
-            <label form="message" class="form-section">Message</label><br>
-            <textarea name="message" required="true" class="input-area"></textarea><br>
-            <button type="submit" class="submit-button">Submit</button>
-        </form>
+        <h2><a id="message"></a>Leave Message</h2>
+            <div class="container">
+                <form name="leave_message">
+                    <div class="row">
+                        <div class="col-25">
+                            <label form="name" class="form-section">Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type ="text" name ="name" required ="true" class="input-area" placeholder="Enter your name here">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label form="email" class="form-section">Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="email" name="email" required="true" class="input-area" placeholder="Enter your email here">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label form="message" class="form-section">Message</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea name="message" required="true" class="input-area" placeholder="Write something..."style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="submit-button">Submit</button>
+                    </div>
+        
+                </form>
+            </div>
     </section>
 
     <section id = "messages">
@@ -88,8 +107,15 @@
         
         </ul>
     </section>
-        <footer></footer>   
-    
+        <footer>
+            <div class="connect-section">
+                <div><a id="connect"></a>
+                    <a href="mailto: larasatisodjati@gmail.com" class="fa-solid fa-envelope"></a>
+                    <a href="https://github.com/larasodjati" class="fa-brands fa-github"></a>
+                    <a href="https://www.linkedin.com/in/larasati-sodjati-a5b394218" class="fa-brands fa-linkedin"></a>
+                </div>
+            </div>
+        </footer>   
         <script src="js/index.js"></script>
     </body>
 </html>

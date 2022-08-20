@@ -5,14 +5,14 @@ let footer = document.querySelector("footer");
 let copyright = document.createElement("p");
 
 //create text for paragraph
-copyright.innerHTML = `Larasati Sodjati ${thisYear}`;
+copyright.innerHTML = `\u00A9Larasati Sodjati ${thisYear}`;
 
 //insert paragraph to webpage
 footer.appendChild(copyright);
 
 //list technical skills
-let skills = ["Java Script", "HTML","SAP and Salesforce Proficient", "Data Entry", 
-"Microsoft Word, PowerPoint, Excel, and Outlook"];
+let skills = ["Java Script", "HTML", "CSS","SAP and Salesforce Proficient", "Data Entry", 
+"Microsoft Word", "Microsoft PowerPoint", "Microsoft Excel", "Microsoft Outlook"];
 
 //select the skills section by id
 let skillsSection = document.getElementById("skills");

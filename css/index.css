@@ -1,124 +1,173 @@
-/*centralized header and about section*/
-header{
-    font-size:1.25rem;
-    text-align: center;
-    background-color:#F0A160;
-    font-weight: bold;
-    margin: -30px -10px 20px;
-}
-#about{
-    text-align: center;
-    font-weight:500;
-    margin: 0px 10px 50px;
+*{
+    box-sizing: border-box;
 }
 /*change font type, size, and color of body*/
 body{
-    background-color: #F6F0E7;
+    background-color: rgb(249, 245, 240);
     color : #050c12;
-    font-family: "Poppins", "PT Sans", Calibri, Tahoma, sans-serif;  
+    font-family: "Poppins", Calibri, Tahoma, sans-serif; 
+    font-size: 1.1rem; 
 }
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
-/*create margin and padding for each section*/
+/*header and about section*/
+.main-header{
+    background-color:#F0A160;
+    margin: -15px -10px 50px;  
+}
+.name{
+    font-size:1.5rem;
+    font-weight: bold;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#about{
+    font-weight:500;
+    margin: 3% 2% 10%;
+    word-spacing: 0.08em;
+}
+#about, .main-nav a, .main-header, footer{
+    text-align: center;
+}
+/*navigation*/
+.main-nav{
+    margin-top: 5px;
+}
+.name,
+.main-nav a{
+    display: block;
+    padding: 10px 15px;
+}
+.main-nav a{
+    font-size: .95em;
+    color:#192E41;   
+}
+.main-nav a:hover, a:link{
+    color:#0a5aca;
+    text-decoration: none;
+}
+.main-nav a:hover, h1, h2, a:hover, button:hover{
+    text-transform: uppercase;
+}
 section{
-    margin: 0px 10px 20px;
-    padding: 0px;
-   
+    margin: 10% 2.5%;
 }
 /*style all headings*/
 h1, h2{
-    font-size: 2em;
+    font-size: 1.35em;
     font-weight:bold;
     color:black;
 }
-/*styled blocks experience section*/
-#experience-section, #skills{
-    border: 3px dotted #F0C9B3;
-    font-size: 1.1rem; 
-    margin: 0px 10px 50px;
-    padding: 5px;
+/*styled blocks experience and skills section*/
+.exp-section, .skills-list{
+    display: flex; 
+    flex-wrap: wrap;
+    font-size: 18px;  
+    margin: 50px 10px 50px;
+    padding: 30px; 
+    justify-content: space-around;     
 }
-/*styled blocks skills section*/
-#skills{
-    background: #F7E7CE; 
+.exp-section{
+    gap: 10px;
+}    
+.item-exp, .skills-list li{
+	padding: 10px;
+	background:rgb(226, 161, 107, 0.1);
+    border-radius: 5px;
+	margin: 25px auto;
+    box-shadow: 0 1.7px 0 0 rgba(0,0,0,0.1);
+    align-items: center;  
 }
-.skills-list{
-    font-weight: bold;
-}
-/*styled connect section */
-#connect-section{
-    margin: 0px 10px 50px;
-}
-#connect-section p{
-    margin: 0px 0px 10px;
-}
-a:link{
-    color: #0a5aca;
-    text-decoration: none;
-}
-  a:visited{
+a:visited{
     color: #2F5061;
 }
-  a:hover{
+a:hover{
     text-decoration: underline;
 }
 /*style the form elements*/
-.form-section{
-    color: #BA8D80;
-    font-weight:800;
-}
 .input-area{
-    font-family: "Poppins", "PT Sans", Calibri, Tahoma, sans-serif;  
-    font-size: medium;
-    font-weight:600;
-    width: 17%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    width: 100%;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
+    resize: vertical;
+} 
+.form-section{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+    color: #BA8D80;
+    font-weight:800;
+}  
+button[type=submit]{
+    background-color: #555656;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    float: right;
 }
-.submit-button, button{
-    font-weight: bold;
-    font-size: 14px;
-    background-color: #e7805d;
-    border: 2.5px outset #FFF3D9;
-    padding:3.5px;
-    cursor: pointer;
+button:hover{
+    background-color: #45a049;
 }
+button[type=submit], button:hover{
+    cursor:pointer;
+}
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }  
 /*styled blocks message list*/
-#messages, .visitor-message{
-    font-weight: bold; 
-}
 .visitor-message{
-    font-size: 1em;
-    background-color: #f9dab0;
-    padding:0px;
-    margin:5px;  
+    display: flex;
+    flex-direction: column;
+}
+.visitor-message li{
+    padding:10px;
+    margin:5px; 
+    background-color: rgb(186, 141, 128, 0.1); 
+    gap 5px;
 }
 /*styled footer*/
 footer{
-    background-color:#e4dfdb;
-    color:#132df5;
-    font-style:oblique;
-    margin:100px -10px -50px; 
-    text-indent: 0.2cm; 
+    background: #cfcfcf;
+    padding: 2em 0;
+    margin: 10px -10px -10px;   
 }
-/* On screens that are 992px wide or less, the background color is blue */
-@media screen and (max-width: 992px) {
-    body {
-      background-color:#E5D4CD;
-    }
+.connect-section{
+    display: flex;
+    align-items: center;
+    justify-content:center;   
 }
-/* On screens that are 600px wide or less, the background color is olive */
-@media screen and (max-width: 600px) {
-    body {
-      background-color:#839573;
-      color: #192E41;
-    }
+footer a{
+	font-size: 26px;
+    margin: 0 10px 0 0;
+    width: 50px;;   	
+}
+footer a:hover{
+    background:#f8e067;
 }
 
