@@ -1,12 +1,16 @@
 *{
     box-sizing: border-box;
+    scroll-padding-top: 30vh;
 }
 /*change font type, size, and color of body*/
 body{
-    background-color: rgb(249, 245, 240);
+    background-color: #F6F0E7;
     color : #050c12;
-    font-family: "Poppins", Calibri, Tahoma, sans-serif; 
-    font-size: 1.1rem; 
+    font-family: "Poppins", "PT Sans", Calibri, Tahoma, sans-serif; 
+    font-size: 1.1rem;      
+}
+section{
+    margin: 10% 2.5% 20%; 
 }
 img{
     display: block;
@@ -16,7 +20,10 @@ img{
 /*header and about section*/
 .main-header{
     background-color:#F0A160;
-    margin: -15px -10px 50px;  
+    margin: -15px -8px 50px;  
+    position: fixed;
+    top:0;
+    width: 100%;  
 }
 .name{
     font-size:1.5rem;
@@ -28,9 +35,7 @@ ul{
     list-style: none;
 }
 #about{
-    font-weight:500;
-    margin: 3% 2% 10%;
-    word-spacing: 0.08em;
+    font-weight:500;      
 }
 #about, .main-nav a, .main-header, footer{
     text-align: center;
@@ -41,7 +46,7 @@ ul{
 }
 .name,
 .main-nav a{
-    display: block;
+    display: inline-block;
     padding: 10px 15px;
 }
 .main-nav a{
@@ -55,16 +60,14 @@ ul{
 .main-nav a:hover, h1, h2, a:hover, button:hover{
     text-transform: uppercase;
 }
-section{
-    margin: 10% 2.5%;
-}
+
 /*style all headings*/
 h1, h2{
     font-size: 1.35em;
     font-weight:bold;
     color:black;
 }
-/*styled blocks experience and skills section*/
+/*styled blocks experience section*/
 .exp-section, .skills-list{
     display: flex; 
     flex-wrap: wrap;
@@ -78,11 +81,11 @@ h1, h2{
 }    
 .item-exp, .skills-list li{
 	padding: 10px;
-	background:rgb(226, 161, 107, 0.1);
+	background:#fcdfc7;
     border-radius: 5px;
 	margin: 25px auto;
     box-shadow: 0 1.7px 0 0 rgba(0,0,0,0.1);
-    align-items: center;  
+    align-items: justify;  
 }
 a:visited{
     color: #2F5061;
@@ -111,13 +114,11 @@ button[type=submit]{
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
+    cursor: pointer;
     float: right;
 }
 button:hover{
     background-color: #45a049;
-}
-button[type=submit], button:hover{
-    cursor:pointer;
 }
 .container{
     border-radius: 5px;
@@ -142,25 +143,20 @@ button[type=submit], button:hover{
   }  
 /*styled blocks message list*/
 .visitor-message{
-    display: flex;
-    flex-direction: column;
-}
-.visitor-message li{
     padding:10px;
-    margin:5px; 
-    background-color: rgb(186, 141, 128, 0.1); 
-    gap 5px;
+    margin:5px;  
 }
 /*styled footer*/
 footer{
     background: #cfcfcf;
-    padding: 2em 0;
+    padding: 1em;
     margin: 10px -10px -10px;   
 }
 .connect-section{
     display: flex;
     align-items: center;
-    justify-content:center;   
+    justify-content:center; 
+  
 }
 footer a{
 	font-size: 26px;
@@ -170,4 +166,3 @@ footer a{
 footer a:hover{
     background:#f8e067;
 }
-
