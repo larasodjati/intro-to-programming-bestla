@@ -13,7 +13,7 @@
     }
     .skills-list li{
         flex-direction: column;
-    }       
+    }    
 }
 
 /* On screens that are max 769px wide*/
@@ -21,7 +21,20 @@
     .col-25, .col-75, .input-area {
             width: 100%;
             margin-top: 0;
-    }   
+    }  
+    .exp-section, .skills-list{
+        flex-wrap: wrap;
+        flex-direction: row;
+    } 
+    #about{
+        margin-top:20px;
+    }
+    .visitor-message{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 20px 10px;
+    }  
 }
 
 /* On screens that are min 1025px wide*/
@@ -37,8 +50,8 @@
 
     .main-header{
         position:relative;
-        background-color: rgb(195, 194, 192); 
-        width:105%;  
+        background-color: #FBE8A6;; 
+    
     }
     .main-nav{
         flex-direction: column;

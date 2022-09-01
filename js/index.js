@@ -71,4 +71,28 @@ function submitForm(event){
     }
    
 }
+//open request 
+let githubRequest = new XMLHttpRequest();
+githubRequest.open("GET", "https://api.github.com/users/larasodjati/repos");
 
+//add event listener and callback function
+githubRequest.addEventListener("load", function(){
+    let repositories = JSON.parse(this.response);
+    console.log(repositories);
+
+//filtered out repositories name
+    let filteredRepositories = repositories.filter((repo) =>
+        repo.name.includes('intro-to-programming-bestla')
+      )
+
+    let projectSection = document.getElementById("projects");
+    let projectList = projectSection.querySelector("ul");
+
+// create loop
+    for(let repositories of filteredRepositories){
+        let project = document.createElement("li");
+        project.innerHTML = `<a href="${repositories.html_url}">${repositories.name}</a>`
+        projectList.appendChild(project);
+    }
+})
+githubRequest.send();
