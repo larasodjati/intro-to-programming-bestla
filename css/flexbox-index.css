@@ -18,6 +18,10 @@
 
 /* On screens that are max 769px wide*/
 @media screen and (max-width: 769px){
+
+    section{
+        margin : 10% 2.5% 10%;
+    }
     .col-25, .col-75, .input-area {
             width: 100%;
             margin-top: 0;
@@ -28,6 +32,14 @@
     } 
     #about{
         margin-top:20px;
+        text-align: center;
+    }
+    .about-section{
+        text-align: justify;
+    }
+    img{
+        align-items: center;
+      
     }
     .visitor-message{
         display: flex;
@@ -50,8 +62,6 @@
 
     .main-header{
         position:relative;
-        background-color: #FBE8A6;; 
-    
     }
     .main-nav{
         flex-direction: column;
