@@ -71,8 +71,9 @@ function submitForm(event){
     }
    
 }
-//open request 
-let githubRequest = new XMLHttpRequest();
+
+//Projects with XHR
+/*let githubRequest = new XMLHttpRequest();
 githubRequest.open("GET", "https://api.github.com/users/larasodjati/repos");
 
 //add event listener and callback function
@@ -83,7 +84,7 @@ githubRequest.addEventListener("load", function(){
 //filtered out repositories name
     let filteredRepositories = repositories.filter((repo) =>
         repo.name.includes('intro-to-programming-bestla')
-      )
+    )
 
     let projectSection = document.getElementById("projects");
     let projectList = projectSection.querySelector("ul");
@@ -96,3 +97,27 @@ githubRequest.addEventListener("load", function(){
     }
 })
 githubRequest.send();
+*/
+
+//Projects with fetch API 
+     fetch("https://api.github.com/users/larasodjati/repos").then((response) => response.json()).then((repositories) =>{
+            //filtered out repositories name
+            let filteredRepositories = repositories.filter((repo) =>
+            repo.name.includes('intro-to-programming-bestla')
+            )
+
+            let projectSection = document.getElementById("projects");
+            let projectList = projectSection.querySelector("ul");
+
+            // create loop
+            for(let repositories of filteredRepositories){
+            let project = document.createElement("li");
+            project.innerHTML = `<a href="${repositories.html_url}">${repositories.name}</a>`
+            projectList.appendChild(project);
+            }   
+        })
+            .catch(error => alert(error.message));
+        
+       
+        
+    
