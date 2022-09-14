@@ -100,7 +100,9 @@ githubRequest.send();
 */
 
 //Projects with fetch API 
-     fetch("https://api.github.com/users/larasodjati/repos").then((response) => response.json()).then((repositories) =>{
+     fetch("https://api.github.com/users/larasodjati/repos")
+        .then((response) => response.json())
+        .then((repositories) =>{
             //filtered out repositories name
             let filteredRepositories = repositories.filter((repo) =>
             repo.name.includes('intro-to-programming-bestla')
@@ -116,7 +118,7 @@ githubRequest.send();
             projectList.appendChild(project);
             }   
         })
-            .catch(error => alert(error.message));
+        .catch(error => alert(error.message));
         
        
         
